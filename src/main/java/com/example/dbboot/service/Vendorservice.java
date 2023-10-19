@@ -34,8 +34,9 @@ public class Vendorservice {
 
     }
 
-    public void deleteVendor(String vendorId) {
+    public String deleteVendor(String vendorId) {
         repo.deleteById(vendorId);
+        return "done";
     }
 
 }
