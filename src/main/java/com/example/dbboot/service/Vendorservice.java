@@ -39,4 +39,11 @@ public class Vendorservice {
         return "done";
     }
 
+    public List<Vendor> getCustomerByCompanyName(String companyName) {
+        return repo.findByCompanyName(companyName);
+    }
+
+    public List<Vendor> searchCustomerByEmailId(String emailId) {
+        return repo.lookUpVendorByEmailId(emailId);
+    }
 }
