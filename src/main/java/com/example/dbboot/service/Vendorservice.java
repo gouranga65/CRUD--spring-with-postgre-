@@ -29,7 +29,7 @@ public class Vendorservice {
     }
 
     public Vendor updateVendorById(String vendorId, Vendor vendorData) {
-        Optional<Vendor> vendId = repo.findById(vendorId);
+        // Optional<Vendor> vendId = repo.findById(vendorId);
         return repo.save(vendorData);
 
     }
